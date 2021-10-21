@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MeStructure</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_recent">Recent</string>
+    <string name="menu_favorite">Favorite</string>
+    <string name="menu_more">More</string>
+    <string name="lbl_open_setting">The app needs location permission. Please enable it in Settings.</string>
+    <string name="lbl_setting">Settings</string>
+    <string name="cancel">Cancel</string>
+    <string name="log_in_screen_welcome_text">Welcome!</string>
+    <string name="hint_username">Email*</string>
+    <string name="hint_password">Password*</string>
+    <string name="btn_login">Login</string>
+    <string name="btn_register">Register</string>
+    <string name="lbl_forgot_password">Forgot Password?</string>
+    <string name="email_required_text">Email is required</string>
+    <string name="password_required_text">Password is required</string>
+    <string name="email_invalid_text">Please enter a valid email address</string>
+</resources>

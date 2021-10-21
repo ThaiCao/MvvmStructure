@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+       <!-- <variable
+            name="movieId"
+            type="String" />
+        <variable
+            name="posterImage"
+            type="String" />
+        <variable
+            name="title"
+            type="String" />
+        <variable
+            name="clickListener"
+            type="com.me.structure.presentation.features.home.listener.OnMovieListener" />-->
+        <variable
+            name="movie"
+            type="String" />
+    </data>
+
+   <!-- <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="@{() -> clickListener.goToMovieDetail(movieId)}"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/cardPoster"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="6dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintDimensionRatio="1:1.5"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ivPoster"
+                android:scaleType="centerCrop"
+                android:src="@color/gray"
+                app:imageUrl="@{posterImage}"
+                app:error="@{@color/colorAccent}"
+                app:placeholder="@{@color/colorAccent}"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvTitle"
+            style="@style/TextAppearance.AppCompat"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            android:text="@{title}"
+            android:paddingLeft="16dp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cardPoster"
+            tools:text="Avengers: III"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>-->
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:id="@+id/cardPoster"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="6dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintDimensionRatio="1:1.5"
+            app:cardElevation="5dp"
+            app:cardUseCompatPadding="true">
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/ivPoster"
+                android:scaleType="centerCrop"
+                android:src="@color/gray"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/tvTitle"
+                style="@style/TextAppearance.AppCompat"
+                android:layout_marginTop="8dp"
+                android:layout_marginRight="8dp"
+                android:paddingLeft="16dp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="parent"
+                tools:text="Avengers: III"
+                />
+        </androidx.cardview.widget.CardView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
